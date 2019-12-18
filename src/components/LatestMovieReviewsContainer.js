@@ -15,4 +15,10 @@ export default class LatestMovieReviewsContainer extends Component {
       reviews: []
     }
   }
+
+  componentDidMount(){
+    fetch(URL)
+    .then(response => response.json())
+    .then(reviewsData => this.setState({reviews: reviewsData}))
+  }
 }
