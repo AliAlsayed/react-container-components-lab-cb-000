@@ -8,6 +8,6 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 
 // Code LatestMovieReviewsContainer Here
 
-export default class MovieReviews extends Component {
+export default class LatestMovieReviewsContainer extends Component {
 
 }
