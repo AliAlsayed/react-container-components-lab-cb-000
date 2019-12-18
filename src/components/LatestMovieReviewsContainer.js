@@ -7,7 +7,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
             + `api-key=${NYT_API_KEY}`;
 
 // Code LatestMovieReviewsContainer Here
-import React from 'react';
+
 export default class MovieReviews extends Component {
 
 }
