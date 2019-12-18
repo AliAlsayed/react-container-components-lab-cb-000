@@ -1,38 +1,18 @@
-setInterval(function () {
+// Code MovieReviews Here
+import React from 'react';
+// export default class MovieReviews extends React.Component {
+//   render(){
+//     return (
+//       <div
+//     )
+//   }
+// }
 
-}, 10);mport React from 'react';
-
-const Review = ({
-  headline,
-  byline,
-  link,
-  summary_short
-}) => {
-  return (
-
-    <div
-      key={headline}
-      className="review"
-    >
-      <header>
-        <a
-          className="review-link"
-          href={link.url}
-        >
-          {headline}
-        </a>
-        <br/>
-        <span className="author">{byline}</span>
-      </header>
-      <blockquote>{summary_short}</blockquote>
-    </div>
-  );
-};
-
-const MovieReviews = ({ reviews }) => <div className="review-list">{reviews.map(Review)}</div>;
-
-MovieReviews.defaultProps = {
-  reviews: []
-};
-
+const MovieReviews = ({reviews}) => (
+  <div className='review-list'>
+      reviews.map((review) =>
+        <p className='review'>{review.summary_short}</p>
+      )
+  </div>
+)
 export default MovieReviews;
