@@ -1,5 +1,5 @@
 setInterval(function () {
-  
+
 }, 10);mport React from 'react';
 
 const Review = ({
