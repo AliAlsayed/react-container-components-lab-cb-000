@@ -8,5 +8,8 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?'
 
 // Code SearchableMovieReviewsContainer Here
 export default class SearchableMovieReviewsContainer extends Component {
-
+  this.state = {
+    searchTerm: '',
+    reviews: []
+  }
 }
